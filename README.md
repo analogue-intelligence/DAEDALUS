@@ -9,8 +9,8 @@ poem -> embed -> word vectors -> CPPN(NEAT) -> (x, y, r, g, b, size) per word ->
 
 ## Two renderers
 
-- `render_svg`      — the diagnostic graph (dark bg, labels, neighbour edges)
-- `render_art_svg`  — the composition: soft colour-blobs, gradient-blended curved
+- `render_svg`      - the diagnostic graph (dark bg, labels, neighbour edges)
+- `render_art_svg`  - the composition: soft colour-blobs, gradient-blended curved
                       threads, white background, points filling a circle/square/rect
 
 ## Run
@@ -23,9 +23,5 @@ python run_art.py    # art view: circular + square compositions, white bg
 
 Both use **WordNet** embeddings so they run offline with real semantics.
 
-## Next steps
-
-- Animate by rendering one frame per generation and crossfading.
-- Add output nodes for rotation / opacity / stroke to enrich the composition.
 - For per-occurrence colour (same word, different line) keep duplicate tokens:
   `tokenize(poem, keep_dupes=True)` with `SentenceTransformerEmbedder`.
