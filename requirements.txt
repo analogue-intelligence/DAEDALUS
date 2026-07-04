@@ -1,0 +1,8 @@
+neat-python
+numpy
+scipy
+nltk
+cairosvg
+# optional, for real embeddings:
+# gensim
+sentence-transformers
